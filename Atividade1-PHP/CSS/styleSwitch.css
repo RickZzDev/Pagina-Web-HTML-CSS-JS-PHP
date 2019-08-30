@@ -1,0 +1,140 @@
+body{
+    background-color: gray;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+#linhaSup{
+    width: 100%;
+    height: 850px;
+    background-color: white;
+    background-image: url(../Imagem/alberto3.jpg);
+    background-position: bottom;
+}
+
+#menu_caixa{
+    width: 800px;
+    height: 70px;
+    background-color: ;
+   
+}
+
+#menu{
+    width: 80px;
+    height: 70px;
+    background-color: ;
+    background-image: url(../Imagem/iconfinder_menu-alt_134216.png);
+    float: left;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#submenu{
+    width:0px;
+    height: 50px;
+    background-color: black;
+    float: left;
+    margin-left: 80px;
+    transition: 0.8s;
+
+    visibility: hidden;
+    opacity: 0;
+
+
+}
+
+
+.submenu_itens{
+    height: 35px;
+    width: 110px;
+    background-color: ;
+    float: left;
+    padding-top: 15px;
+    padding-left: 10px;
+}
+
+.submenu_itens:hover{
+    background-color: aqua;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+#menu:hover > #submenu {
+    visibility: visible;
+    transition: 1s;
+    opacity: 1;
+    width: 850px;
+    margin-top: 10px;
+   
+}
+
+#calc_caixa{
+    width: 850px;
+    height: 550px;
+    margin-top: 15px;
+    background-color: paleturquoise;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#auxilia1{
+    margin-left: auto;
+    margin-right: auto;
+    width: 130px;
+    background-color: ;
+    height: inherit;
+}
+
+#caixa_titulo{
+    width:850px;
+    height: 40px;
+    background-color: gray;
+}
+
+#caixa_inferior{
+    width: inherit;
+    height: 510px;
+    background-color: ;
+   padding-top: 15px;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+
+#numeros{
+    width:300px;
+    height: 250px;
+    background-color: ;
+    float: left;
+}
+
+#DivBtnCalc{
+    float: left;
+    width: 70px;
+    height: 25px;
+    background-color: ;
+    margin-left: 15px;
+    margin-top: 25px;
+}
+
+#divResultado{
+    width: 550px;
+    height: 180px;
+    background-color:gray;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#linha_sup{
+    width: inherit;
+    height: 250px;
+    background-color: rgba(255,255,255,0.5);
+}
+
+
+
+

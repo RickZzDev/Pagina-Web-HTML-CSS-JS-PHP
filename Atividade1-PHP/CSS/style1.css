@@ -1,0 +1,75 @@
+body{
+    background-color: gray;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+#linhaSup{
+    width: 100%;
+    height: 850px;
+    background-color: aliceblue;
+    background-image: url(../Imagem/alberto3.jpg);
+    background-position: top;
+}
+
+#menu_caixa{
+    width: 800px;
+    height: 70px;
+    background-color: ;
+
+}
+
+#menu{
+    width: 80px;
+    height: 70px;
+    background-color: ;
+    background-image: url(../Imagem/iconfinder_menu-alt_134216.png);
+    float: left;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#submenu{
+    width:0px;
+    height: 50px;
+    background-color: black;
+    float: left;
+    margin-left: 80px;
+    transition: 0.8s;
+
+    visibility: hidden;
+    opacity: 0;
+
+
+}
+
+
+.submenu_itens{
+    height: 35px;
+    width: 110px;
+    background-color: ;
+    float: left;
+    padding-top: 15px;
+    padding-left: 10px;
+}
+
+.submenu_itens:hover{
+    background-color: aqua;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+#menu:hover > #submenu {
+    visibility: visible;
+    transition: 1s;
+    opacity: 1;
+    width: 850px;
+    margin-top: 10px;
+   
+}
+
+
+
