@@ -1,0 +1,791 @@
+#alinha_rodape{
+    background-color: ;
+    height: 100%;
+    width:1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*SLIDEEEEEER*/
+* {box-sizing:border-box}
+
+
+/* Float Shadow */
+.float-shadow {
+  display: inline-block;
+  position: relative;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0);
+}
+.float-shadow:before {
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+  content: '';
+  top: 100%;
+  left: 5%;
+  height: 10px;
+  width: 90%;
+  opacity: 0;
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+  /* W3C */
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+}
+.float-shadow:hover, .float-shadow:focus, .float-shadow:active {
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  /* move the element up by 5px */
+}
+.float-shadow:hover:before, .float-shadow:focus:before, .float-shadow:active:before {
+  opacity: 1;
+  -webkit-transform: translateY(5px);
+  transform: translateY(5px);
+  /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
+}
+
+/* Skew Forward */
+.skew-forward {
+/*  display: inline-block;*/
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transform-origin: 0 100%;
+  transform-origin: 0 100%;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.skew-forward:hover, .skew-forward:focus, .skew-forward:active {
+  -webkit-transform: skew(-10deg);
+  transform: skew(-10deg);
+}
+
+
+/**********************/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+@font-face {
+    font-family:madeira;
+    src: url(font/madeira.ttf);
+}
+    
+body{
+    background-image: linear-gradient(to right, black,rgb(71,00,17),black);
+}
+
+p{
+    color: white;
+    font-size: 15px;
+    font-family:cursive;
+    
+}
+#segura_caixa_menu{
+    width: 100%;
+    height:100px;
+    background-color:rgb(71,00,17);
+    margin-left: auto;
+    margin-right: auto;
+    position: fixed;
+    z-index: 4;
+    
+    
+    
+}
+
+#input_login{
+    border-radius: 10px;
+    padding-left: 2px;
+    width: 160px;
+    box-sizing: border-box;
+}
+
+#input_senha{
+    border-radius: 10px;
+    padding-left: 2px;
+    width: 160px;
+    box-sizing: border-box;
+}
+
+
+#caixa_menu{
+    width:1650px;
+    height:100px;
+    background-color: rgb(71,00,17);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.menu_itens{
+    width:130px;
+    height:inherit;
+    font-family: verdana;
+    font-size: 14px;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 15px;
+    /*Trava o tamanho do elemento para que o paddin não altere o tamanho original*/
+    box-sizing: border-box;
+    list-style: none;
+    /*Deita a lista
+    display: inline-block;*/
+    background-color: rgb(71,00,17);
+    /*Deita a lista tambem*/
+    float: left;
+    margin-right: 10px;
+}
+
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+.menu_itens:hover{
+    color: rgb(71,00,17);
+    background-color: white;
+    cursor: pointer;
+}
+ 
+.menu_itens:hover a{
+    color: rgb(71,00,17);
+    
+    cursor: pointer;
+}
+
+
+
+/*POP*/
+@-webkit-keyframes pop {
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes pop {
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.pop {
+  display: inline-block;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.pop:hover, .pop:focus, .pop:active {
+  -webkit-animation-name: pop;
+  animation-name: pop;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+
+
+
+
+#caixa_logo{
+   height: 100px;
+    width:150px;
+    background-color:;
+    float: left;
+    margin-left: 10px;
+    background-image: url(../imagens/LogoPizza.PNG);
+    background-position: bottom;
+    border-radius: 10px;
+    box-shadow: 10px;
+
+}
+
+#segura_menu_itens{
+    height:50px;
+    width:980px;
+    background-color: rgb(71,00,17);
+    float: left;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+#caixa_login{
+    height: 30px;
+    width:420px;
+    background-color:;
+    float: left;
+    margin-left: 40px;
+    margin-top: 12px;
+}
+
+
+
+#caixa_usuario{
+    float: left;
+    background-color: rgb(71,00,17);
+    height: 45px;
+    width:180px;
+    
+}
+
+.usuario{
+    width: 100%;
+    height: 25px;
+    background-color: rgb(71,00,17);
+    color: white;
+}
+
+#txtUsuario{
+    width: 100%;
+    height:;
+    background-color:;
+    margin-top: 1px;
+}
+#txtSenha{
+    width: 240px;
+    height: 10px;
+    background-color:;
+    margin-top: 1px;
+   
+}
+
+#caixa_senha{
+    float: left;
+    background-color: ;
+    height: 45px;
+    width:100px;
+    
+}
+
+
+#input_logar{
+   border-radius: 10px;
+    background-color: rgb(71,00,17);
+    color: white;
+    width: 80px;
+}
+
+#btnLogin{
+    height: 35px;
+    width: 55px;
+    background-color:;
+    float: right;
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 8px;
+    border-radius: 5px;
+    margin-top: -8px;
+    margin-left: 1px;
+}
+
+#input_logar:hover{
+    cursor: pointer;
+}
+
+#caixa_slider{
+    width:1400px;
+    height:0px;
+    background-color: ;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top:5px;
+    box-sizing: border-box;
+    margin-bottom: 120px;
+}
+
+#segura_conteudo{
+    width:100%;
+    height:750px;
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+}
+
+#caixa_conteudo{
+   margin-left: auto;
+    margin-right: auto;
+    min-height:1150px;
+    width:1400px;
+    overflow: hidden;
+    background-color: ;   
+}
+
+
+.caixa_produtos{
+    min-height: 350px;
+    width:300px;
+    background-color:white;
+    margin-left: 45px;
+    margin-right: 40px;
+    float: left;
+    margin-top: 15px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    opacity: 0.8;
+    box-shadow: 0 0 10px rgba(94, 92, 84, 0.5);
+}
+
+.caixa_produtos:hover{
+    cursor: pointer;
+    opacity: 1;
+    border: solid 1px;
+    border-color:black;
+    transition: 0.1s;
+    background-image: linear-gradient(to bottom,white,rgba(181, 181, 181,0.4));
+}
+
+.caixa_produtos p{
+    color: black;
+}
+
+#caixa_produtos_div{
+    width: 1185px;
+    min-height:850px;
+    background-color: white;
+    float: left;
+    
+
+}
+
+
+.img_produto{
+    width: 100%;
+    height: 180px;
+    background-color: ;
+    background-image: url(../imagens/pizza_teste.png);
+    background-position: center;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-size: 320px 180px;
+    background-repeat: no-repeat;
+
+}
+
+.nome_produto{
+    margin-left:5px;
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+    background-color:;
+    
+}
+
+.descricao_produto{
+    margin-left:5px;
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+    background-color:;
+    
+}
+
+.preco_produto{
+    margin-left:5px;
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+    background-color:;
+    
+}
+
+.txtSaiba{
+    color: white;
+    font-size: 18px;
+    padding: 1px;
+}
+
+.saibaMais{
+    width: 150px;
+    height: 30px;
+    background-color: rgb(71,00,17);
+    margin-top: 5px;
+    margin-right: 15px;
+    margin-left: auto;
+    border-radius: 20px;
+    padding-top: 5px;
+    padding-left:35px;
+}
+
+.saibaMais:hover{
+    cursor: pointer;
+}
+
+
+
+#menu_secundario{
+    width:200px;
+    height:750px;
+    background-color: ;
+    float: left;
+    margin-right: 15px;
+}
+
+.submenu_itens{
+    width: 100%;
+    height: 62px;
+    background-color: ;
+    margin-top:5px;
+    padding-left: 0px;
+    padding-top: 0px;
+   transition: 0s;
+    
+}
+
+.fatiaIcone{
+    height: 62px;
+    width: 65px;
+    background-color:rgb(71,00,17);
+    float: left;
+    background-image: url(../imagens/pizzaComFatia.png);
+    transition: 0s;
+    
+     
+    
+}
+
+.submenu_titulo{
+    width: 135px;
+    height: 62px;
+    background-color: rgb(71,00,17);
+    float: left;
+    padding-left: 2px;
+    padding-top: 16px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px; 
+}
+
+.submenu_titulo:hover{
+    cursor: pointer;
+}
+
+.submenu_itens:hover > .fatiaIcone{
+    background-image:url(../imagens/pizzaSemFatia.png);
+    cursor: pointer;
+    transition: 0s;
+    background-position: left;
+}
+
+#caixa_redes{
+    width:125px;
+    height:402px;
+    background-color: ;
+    float: left;
+    position: fixed;
+    margin-left: 1450px;
+    margin-top: -5px;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.icon_redes{
+    width: 123px;
+    height:128px;
+    margin-bottom: 8px;
+    background-color:#b5b5b5;
+    border-top-left-radius: 80px;
+   border-top-right-radius: 0px;
+    transition:1s;
+    
+}
+
+
+.icon_redes:hover{
+    border-top-right-radius: 80px;
+    border-top-left-radius: 0px;
+    background-color: rgb(82, 5, 0);
+    cursor: pointer;
+}
+
+
+#lojaTitulo{
+    background-color: ;
+    width:350px;
+    height: 50px;
+    margin-top: 15px;
+    box-sizing: border-box;
+    font-size: 18px;
+    text-align: center;
+    
+}
+
+
+.imgPizzaria{
+    background-color: ;
+    height: 350px;
+    width:550px;
+    float: left;
+    margin-left: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-sizing: border-box;
+}
+
+.divTexto{
+    width: 615px;
+    height: 70%;
+    background-color:;
+    float: left;
+    margin-left: 15px;
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+
+.endereco{
+    width: 100%;
+    height: 80px;
+    background-color: ;
+    margin-top: 10px;
+    color: black;
+    font-size: 25px;
+    padding-left: 5px;
+}
+
+.horario{
+    width: 100%;
+    height: 70px;
+    background-color: ;
+    margin-top: 10px;
+    color: black;
+    font-size: 25px;
+    padding-left: 5px;
+}
+
+.referencia{
+    width: 100%;
+    height: 70px;
+    background-color: ;
+    margin-top: 10px;
+    color: black;
+    font-size: 25px;
+    padding-left: 5px;
+}
+
+a:link{
+    text-decoration: none;
+    text-decoration-color: white;
+    
+}
+.btnChegar{
+    margin-top: 15px;
+    width:150px;
+    height: 50px;
+    background-color:rgb(71,00,17);
+    border-radius: 50px;
+    padding-left: 18px;
+    padding-top: 15px;
+    font-size: 20px;
+}
+
+.btnChegar:hover a{
+    color:rgb(71,00,17);
+}
+.btnChegar:hover{
+    background-color:white;
+}
+
+.btnChegar a {
+    color: white;
+}
+
+
+.linhaImgTexto{
+    background-color: ;
+    width: 100%;
+    height: 350px;
+    margin-bottom:10px;
+}
+
+
+img{
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+
+
+.center{
+    margin-left: auto;
+    margin-right: auto;
+}
+#roda{
+    margin-top: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height:103px;
+    background-color: rgb(71,00,17);
+}
+
+#caixa_sistema_interno{
+    height: 80px;
+    width:280px;
+    background-color: rgb(71,00,17);
+    margin-left: 5px;
+    float: left;
+    margin-top: 10px;
+    color: white;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-top: 25px;
+    font-size: 25px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+#caixa_sistema_interno:hover{
+    background-color: white;
+    color: rgba(71,00,17);
+    cursor: pointer;
+    transition: 1s;
+    letter-spacing: 1px;
+    padding-left: 18px;
+    
+}
+
+#caixa_endereco{
+    float: left;
+    margin-left: 60px;
+    width: 650px;
+    height: 80px;
+    background-color: rgb(71,00,17);
+    margin-top: 10px;
+    color: white;
+    padding-left: 15px;
+    padding-top: 7px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+#logo_app{
+    float: left;
+    height: 80px;
+    width:100px;
+    background-color: rgb(71,00,17);
+    background-image: url(../imagens/celularIcone.png);
+    margin-left: 80px;
+    margin-top: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+#logo_app:hover{
+    background-image: url(../imagens/celularIcone2.png);
+    cursor: pointer;
+    
+}
+
+#caixa_baixa_app{
+    float: left;
+    height:80px;
+    width:195px;
+    background-color: rgb(71,00,17);
+    margin-top: 10px;
+    margin-left: 25px;
+    color: white;
+    font-size: 25px;
+    box-sizing: border-box;
+    padding-left: 38px;
+    padding-top: 25px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+#caixa_baixa_app:hover{
+    background-color: white;
+    color: rgba(71,00,17);
+    cursor: pointer;
+    transition: 1s;
+    letter-spacing: 1px;
+   padding-left: 35px;
+}
+
+#primeiraLinha{
+    width: 100%;
+    height: 550px;
+    background-color: aqua;
+    background-image: url(../imagens/linha4.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: -20px;
+}
+
+#segundaLinha{
+    width: 100%;
+    height: 550px;
+    background-image: linear-gradient(to right, black,rgb(71,00,17),rgb(71,00,17),rgb(71,00,17),rgb(71,00,17),rgb(71,00,17),rgb(71,00,17),rgb(71,00,17),rgb(71,00,17),rgb(71,00,17),rgb(71,00,17),rgb(71,00,17),rgb(71,00,17),black);
+    box-sizing: border-box;
+    padding-top: 8px;
+    
+}
+
+
+#terceiraLinha{
+    box-sizing: border-box;
+    padding-top: 10px;
+    width:100%;
+    height: 580px;
+    background-color:cornflowerblue;
+    background-attachment: fixed;
+    background-image: url(../imagens/linha5.jpg);
+}
+h1{
+    margin-left: 25px;
+}
+
+.fixaCentro{
+    width: 1350px;
+    height: 550px;
+    background-color:rgba(255,255,255,0.9);
+    border-radius: 50px;
+}
+
+.textoSobre{
+    width: 99%;
+    height:440px;
+    background-color: ;
+    margin-left: 10px;
+    float: left;
+    font-size: 25px;
+}
+
+#fixaCentro2{
+    width: 1200px;
+    height: 380px;
+    background-color:rgb(71,17,00);
+}

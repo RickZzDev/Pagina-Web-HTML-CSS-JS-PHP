@@ -1,0 +1,183 @@
+/*reset geral*/
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-image: url(../imagens/linha1.jpg);
+}
+
+/*classe para centralizar*/
+.center{
+    margin-left: auto;
+    margin-right: auto;
+}
+/*estilização do container geral*/
+#container_geral{
+    margin-top: 20px;
+    width: 1050px;
+    height: 1050px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 4px 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+/*area do titulo e logo do cms*/
+
+#area_titulo{
+    width: 100%;
+    height: 150px;
+    background-color: white;
+        border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+#titulo_cms{
+    width: 600px;
+    height: 70px;
+    background-color: ;
+    margin-top: 30px;
+    margin-left: 10px;
+    float: left;
+    padding-top: 10px;
+    padding-left: 0px;
+    box-sizing: border-box;
+    color: black;
+}
+
+#img_cms{
+    width: 280px;
+    height: 90px;
+    background-color:;
+    float: left;
+    margin-top: 30px;
+    margin-left: 10px;
+    background-image: url(../imagens/managee.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+}
+
+
+/*estilização dos adms*/
+
+#area_adms{
+    width:100%;
+    height: 250px;
+    background-color: gray;
+
+}
+
+.caixa_usuarios{
+    width: 170px;
+    height: 180px;
+    background-color:gray;
+    float: left;
+    margin-right: 15px;
+    margin-left: 30px;
+    margin-top: 20px;
+    
+    box-sizing: border-box;
+}
+
+.img_adm{
+    width: 100%;
+    height: 130px;
+    background-color: ;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+
+.tipo_adm{
+    width: 100%;
+    height: 50px;
+    background-color: gray;
+    font-size: 21px;
+    box-sizing: border-box;
+    padding-left: 2px;
+    
+}
+
+#area_bem_vindo{
+    width: 290px;
+    height: 30px;
+    background-color: ;
+    float: left;
+    margin-left: 0px;
+    margin-top: 50px;
+    font-size: 25px;
+    color: white;
+}
+
+#caixa_logout{
+    margin-left: -25px;
+    width: 140px;
+    height:20px;
+    float: left;
+    background-color: ;
+    margin-top: 220px;
+    box-sizing: border-box;
+    font-size: 20px;
+ 
+    
+
+}
+
+#btnlogout{
+    width: 130px;
+    border-radius: 10px;
+}
+
+/*Estilização da area das paginas*********/
+
+#area_paginas{
+    width:100%;
+    height: 550px;
+    background-color: ;
+    box-sizing: border-box;
+    padding-left: 150px;
+}
+
+.caixa_paginas{
+    width: 250px;
+    height: 150px;
+    background-color: dimgrey;
+    margin-left: 10px;
+    margin-bottom:5px; 
+}
+
+.caixa_produtos{
+    box-sizing: border-box;
+    padding-top: 25px;
+    padding-left: 25px;
+    width: 350px;
+    height: 550px;
+    background-color: gray;
+    float: left;
+    margin-right:35px; 
+}
+
+.img_pagina_adm{
+    width: 120px;
+    height: 100%;
+    background-color: fuchsia;
+    float: left;
+}
+
+.nome_pagina{
+    background-color: blue;
+    width:130px;
+    height: 150px;
+    float: left;
+}
+
+/*****Rodape****/
+
+#rodape{
+    width: 100%;
+    height: 100px;
+    background-color:yellow;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
