@@ -5,7 +5,7 @@
 <html lang="pt-br">
     <head>
         <meta charset="utf-8">
-        <title>Projeto Pagina7.1</title>
+        <title>Projeto Pagina7.2</title>
         <meta  name="viewport" content="width=device-width, initial-scale=1" >
         
         <link rel="stylesheet" href="css/styleContato.css">
