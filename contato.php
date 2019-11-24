@@ -1,11 +1,44 @@
+<?php
+
+    session_start();
+
+    require_once('bd/conexao.php');
+
+    $conexao = conexaoMySql();
+
+  
+
+    $sql = " select * from tbllojas where status = 1";
+
+    $rodaScript = mysqli_query($conexao,$sql);
+
+    @$login = $_GET['inputLogin'];
+    @$senha = $_GET['inputSenha'];
+    $senha_cript = md5($senha);
+
+    if(isset($_GET['btnLogin'])){
+        
+        $sql = "select * from tblusuario where login ='".$login."' and senha='".$senha_cript."' and status = 1";
+    
+        $rodaScript = mysqli_query($conexao,$sql);
+    
+        if($array = mysqli_fetch_array($rodaScript)){
+            $_SESSION['codigoLogin'] = $array['codigo'];
+            header('location:cms/admUsuarios.php');
+        }else{
+            echo("<script>alert ('usuario desativado')</script>");
+        }
+            
+    }
 
 
+?>
 <!DOCTYPE html> 
 
 <html lang="pt-br">
     <head>
         <meta charset="utf-8">
-        <title>Projeto Pagina7.2</title>
+        <title>Projeto Pagina7.1</title>
         <meta  name="viewport" content="width=device-width, initial-scale=1" >
         
         <link rel="stylesheet" href="css/styleContato.css">
@@ -17,14 +50,14 @@
                 <div id="caixa_logo">
                 </div>
                 <div id="segura_menu_itens">
-                            <div class="menu_itens pop"><a href="ProjetoPagina1.html">Home</a>
+                            <div class="menu_itens pop"><a href="ProjetoPagina1.php">Home</a>
                             </div>
-                        <div class="menu_itens pop"><a href="curiosidades.html">Curiosidades</a></div>
-                        <div class="menu_itens pop"><a href="Promocoes.html">Promoções</a></div>
-                            <div class="menu_itens pop"><a href="sobre.html">Sobre</a></div>
-                        <div class="menu_itens pop"><a href="Loja.html">Loja</a></div>
-                            <div class="menu_itens pop"><a href="ProdutoMes.html">Produto do mês</a></div>
-                             <div class="menu_itens pop"><a href="contato.html">Entre em contato</a></div>
+                        <div class="menu_itens pop"><a href="curiosidades.php">Curiosidades</a></div>
+                        <div class="menu_itens pop"><a href="Promocoes.php">Promoções</a></div>
+                            <div class="menu_itens pop"><a href="sobre.php">Sobre</a></div>
+                        <div class="menu_itens pop"><a href="Loja.php">Loja</a></div>
+                            <div class="menu_itens pop"><a href="ProdutoMes.php">Produto do mês</a></div>
+                             <div class="menu_itens pop"><a href="contato.php">Entre em contato</a></div>
                                     
                 </div>
                 <div id="caixa_login">
@@ -34,7 +67,7 @@
                                 <p>Usuario</p>
                             </div>
                             <div id="txtUsuario">
-                                <input name="txtUsuario" type="text" value="" placeholder="Digite seu usuario"  id="input_login">
+                                <input name="inputLogin" type="text" value="" placeholder="Digite seu usuario"  id="input_login">
                             </div>
                         </div>
                         <div id="caixa_senha">
@@ -42,7 +75,7 @@
                                 <p>Senha</p>
                                 </div>
                              <div id="txtSenha">
-                                <input name="txtSenha" type="text" value="" placeholder="*********" id="input_senha">
+                                <input name="inputSenha" type="password" value="" placeholder="*********" id="input_senha">
                                 <div id="btnLogin" class="pop">
                                     <input name="btnLogin" type="submit" value="Entrar"
                                         id="input_logar">   
@@ -185,7 +218,23 @@
 
     $conexao = conexaoMySql();
 
-    $select = $_POST['sugestao'];
+
+    if(isset($_GET['btnLogin'])){
+        echo("clicou");
+        $sql = "select * from tblusuario where login ='".$login."' and senha='".$senha_cript."'";
+    
+        $rodaScript = mysqli_query($conexao,$sql);
+    
+        if($array = mysqli_fetch_array($rodaScript)){
+            $_SESSION['codigoLogin'] = $array['codigo'];
+            header('location:cms/admUsuarios.php');
+        }else{
+            echo("erro");
+        }
+            
+    }
+
+    $select = $_POST['sugestao_critica'];
     
     if($select=="sugestao" || $select=="critica")
         echo("fooi");
@@ -201,12 +250,12 @@
         $mensagem = $_POST['txtMensagem'];
         $sexo = $_POST['rdoSexo'];
         $profissao = $_POST['txtProfissao'];
+        echo("asdasdasd");
         
-        
-        $sql = "insert into tblcontatos (nome,telefone,celular,email,home_page,link_facebook,sugestao,mensagem,sexo,profissao) values ('".$nome."', '".$telefone."' , '".$celular."' , '".$email."', '".$homePage."' , '".$linkFacebook."' , '".$sugestao."' , '".$mensagem."' , '".$sexo."' , '".$profissao."' )";
-        
+        $sql = "insert into tblcontatos (nome,telefone,celular,email,home_page,link_facebook,sugestao_critica,mensagem,sexo,profissao) values ('".$nome."', '".$telefone."' , '".$celular."' , '".$email."', '".$homePage."' , '".$linkFacebook."' , '".$sugestao."' , '".$mensagem."' , '".$sexo."' , '".$profissao."' )";
+        echo($sql);
         if(mysqli_query($conexao,$sql))
-            header('location:contato.php');
+            @header('location:contato.php');
         else
             echo('Erro ao enviar ao banco');
     }

@@ -1,3 +1,37 @@
+<?php
+
+
+    session_start();
+
+    require_once('bd/conexao.php');
+
+    $conexao = conexaoMySql();
+
+
+
+
+    @$login = $_GET['inputLogin'];
+    @$senha = $_GET['inputSenha'];
+    $senha_cript = md5($senha);
+
+    if(isset($_GET['btnLogin'])){
+       
+        $sql = "select * from tblusuario where login ='".$login."' and senha='".$senha_cript."' and status = 1";
+    
+        $rodaScript = mysqli_query($conexao,$sql);
+    
+        if($array = mysqli_fetch_array($rodaScript)){
+            $_SESSION['codigoLogin'] = $array['codigo'];
+            header('location:cms/admUsuarios.php');
+        }else{
+            echo("<script>alert ('usuario desativado')</script>");
+        }
+            
+    }
+
+?>
+
+
 <!DOCTYPE html>
 
 <html lang="pt-br">
@@ -14,24 +48,24 @@
                 <div id="caixa_logo">
                 </div>
                 <div id="segura_menu_itens">
-                       <div class="menu_itens pop"><a href="ProjetoPagina1.html">Home</a>
+                       <div class="menu_itens pop"><a href="Promocoes.php">Home</a>
                             </div>
                         <div class="menu_itens pop"><a href="curiosidades.php">Curiosidades</a></div>
-                        <div class="menu_itens pop"><a href="Promocoes.html">Promoções</a></div>
+                        <div class="menu_itens pop"><a href="Promocoes.php">Promoções</a></div>
                             <div class="menu_itens pop"><a href="sobre.php">Sobre</a></div>
                         <div class="menu_itens pop"><a href="Loja.php">Loja</a></div>
-                            <div class="menu_itens pop"><a href="ProdutoMes.html">Produto do mês</a></div>
+                            <div class="menu_itens pop"><a href="ProdutoMes.php">Produto do mês</a></div>
                              <div class="menu_itens pop"><a href="contato.php">Entre em contato</a></div>
                                     
                 </div>
                 <div id="caixa_login">
-                    <form method="get" action="ProjetoPagina1.html" name="frmLogin">
+                    <form method="get" action="Promocoes.php" name="frmLogin">
                         <div id="caixa_usuario">
                             <div class="usuario">
                                 <p>Usuario</p>
                             </div>
                             <div id="txtUsuario">
-                                <input name="txtUsuario" type="text" value="" placeholder="Digite seu usuario"  id="input_login">
+                                <input name="inputLogin" type="text" value="" placeholder="Digite seu usuario"  id="input_login">
                             </div>
                         </div>
                         <div id="caixa_senha">
@@ -39,7 +73,7 @@
                                 <p>Senha</p>
                                 </div>
                              <div id="txtSenha">
-                                <input name="txtSenha" type="text" value="" placeholder="*********" id="input_senha">
+                                <input name="inputSenha" type="text" value="" placeholder="*********" id="input_senha">
                                 <div id="btnLogin" class="pop">
                                     <input name="btnLogin" type="submit" value="Entrar"
                                         id="input_logar">   
