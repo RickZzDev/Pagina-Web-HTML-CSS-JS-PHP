@@ -85,6 +85,7 @@
     
 body{
     background-color: #dcdedc;
+    min-height:800px;
 }
 
 p{
@@ -507,7 +508,7 @@ a{
     width:450px;
     height: 350px;
     background-color:;
-    background-image: url(../imagens/curiosidades1.jpg);
+    
     background-size: cover;
     border-top-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -522,7 +523,7 @@ a{
     margin-right:0px;
     float:right;
     border-bottom-right-radius: 10px;
-    background-image: url(../imagens/curiosidades2.jpg);
+    
     background-position: center;
     border-top-left-radius: 10px;
     
@@ -570,7 +571,7 @@ img{
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    height:103px;
+    height:130px;
     background-color: rgb(71,00,17);
 }
 

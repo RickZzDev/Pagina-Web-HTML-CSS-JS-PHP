@@ -1,0 +1,59 @@
+#container_login{
+    width: 850px;
+    height: 550px;
+    background: red;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 150px;
+    box-sizing: border-box;
+ 
+}
+
+.loginSenha{
+    margin-top: 20px;
+    width:inherit;
+    height: 40px;
+    background: aqua;
+    display: flex;
+    justify-content: space-around;
+}
+
+#inputLogin{
+    width: 90%;
+    height: 90%;
+    font-size: 25px;
+    border-radius: 50px;
+    padding-left: 10px;
+}
+
+#inputSenha{
+    width: 90%;
+    height: 90%;
+    font-size: 25px;
+    border-radius: 50px;
+    padding-left: 10px;
+}
+
+#containerBtn{
+    width: 250px;
+    height: 40px;
+    background: darkblue;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+}
+
+#btnLogar{
+    width: inherit;
+    height: inherit;
+    background:none;
+    color: white;
+    font-size: 25px;
+    border-radius: 50px;
+    border: none;
+}

@@ -1,0 +1,532 @@
+/*reset geral*/
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    /* background-image: url(../imagens/linha1.jpg); */
+}
+
+/*classe para centralizar*/
+.center{
+    margin-left: auto;
+    margin-right: auto;
+}
+/*estilização do container geral*/
+#container_geral{
+    margin-top: 20px;
+    width: 1250px;
+    height: 1050px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 4px 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+/*area do titulo e logo do cms*/
+
+#area_titulo{
+    width: 100%;
+    height: 150px;
+    background: rgb(176,16,2);
+background: linear-gradient(81deg, rgba(176,16,2,1) 5%, rgba(180,33,0,0.9108018207282913) 45%, rgba(255,192,0,1) 88%);
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    padding-left: 8%;
+    box-sizing: border-box;
+
+}
+
+#titulo_cms{
+    width: 1000px;
+    height: 70px;
+    background-color: ;
+    margin-top: 30px;
+    margin-left: 10px;
+    float: left;
+    padding-top: 10px;
+    padding-left: 0px;
+    box-sizing: border-box;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 23px;
+}
+
+/* #img_cms{
+    width: 280px;
+    height: 90px;
+    background-color:blue;
+    float: left;
+    margin-top: 30px;
+    margin-left: 10px;
+    background-image: url(../imagens/managee.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+} */
+
+
+/*estilização dos adms*/
+
+#area_adms{
+    width:100%;
+    height: 250px;
+    background-color: white;
+    padding-left: 20%;
+    box-sizing: border-box;
+
+}
+
+.caixa_usuarios{
+    width: 170px;
+    height: 180px;
+    background-color:gray;
+    float: left;
+    margin-right: 15px;
+    margin-left: 30px;
+    margin-top: 20px;
+    
+    box-sizing: border-box;
+}
+
+.img_adm{
+    width: 100%;
+    height: 130px;
+    background-color:white ;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+
+.tipo_adm{
+    width: 100%;
+    height: 50px;
+    background: white;
+    font-size: 21px;
+    box-sizing: border-box;
+    padding-left: 2px;
+    text-align: center;
+    font-size: 22px;
+
+    
+}
+
+#area_bem_vindo{
+    width: 290px;
+    height: 30px;
+    float: left;
+    margin-left: 0px;
+    margin-top: 50px;
+    font-size: 25px;
+    color: black;
+    background: ;
+}
+
+#caixa_logout{
+    margin-left: -105px;
+    width: 140px;
+    height:20px;
+    float: left;
+    background-color: ;
+    margin-top: 180px;
+    box-sizing: border-box;
+    font-size: 20px;
+ 
+    
+
+}
+
+#btnlogout{
+    width: 130px;
+    border-radius: 10px;
+    border: 0px;
+    background: black;
+    color: white;
+}
+
+/*Estilização da area das paginas*********/
+
+#area_paginas{
+    width:100%;
+    min-height: 550px;
+    background-color:white;
+    box-sizing: border-box;
+   overflow: hidden;
+}
+
+.caixa_paginas{
+    width: 250px;
+    height: 150px;
+    background-color: dimgrey;
+    margin-left: 10px;
+    margin-bottom:5px; 
+}
+
+.caixa_produtos{
+    box-sizing: border-box;
+    padding-top: 25px;
+    padding-left: 25px;
+    width: 350px;
+    height: 550px;
+    background-color: gray;
+    float: left;
+    margin-right:35px; 
+}
+
+.img_pagina_adm{
+    width: 120px;
+    height: 100%;
+    background-color: ;
+    float: left;
+}
+
+.nome_pagina{
+    background-color: ;
+    width:130px;
+    height: 150px;
+    float: left;
+}
+/*AREA DE ESTILIZAÇÃO DA TABELA*/
+#titulo_consulta{
+    width:350px;
+    height:50px;
+    background-color: ;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 40px;
+    box-sizing: border-box;
+   
+}
+
+#area_tabela{
+    width: 950px;
+    height: 500px;
+    background-color:;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+
+/*ESTILIZAÇÃO DA LINHA DE CADASTROS*/
+#linha_cadastros{
+    height: 50px;
+    width: 100%;
+    background-color: ;
+    box-sizing: border-box;
+    padding-left: 20px;
+}
+
+.nome_campo{
+    width: 140px;
+    height: 40px;
+    background-color: ;
+    margin-right: 5px;
+    float: left;
+    font-size: 25px;
+    font-family: cursive;
+
+}
+
+#linha_form{
+    width: 100%;
+    height: 50px;
+    background-color: ;
+    padding-left: 20px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.campo_consulta{
+    width: 140px;
+    height: 100%;
+    margin-right: 5px;
+    background-color:white;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 12px;
+    box-sizing: border-box;
+    float: left;
+}
+
+.campoImg{
+    padding-top: 0px;
+    padding-left: 15px;
+    background: ;
+}
+
+
+
+.campo_consulta icones{
+    padding-top: -10px;
+  
+}
+
+
+/*Area dos icones*/
+.icones{
+    background:;
+    width: 50px;
+    height: 49px;
+    float: left;
+    margin-right:10px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+}
+
+
+.bg1{
+    background-image: url(../imagens/lupa.png);
+}
+
+.bg2{
+    background-image: url(../imagens/trash.png);
+  
+    box-sizing: border-box;
+
+}
+
+#escolha{
+    width: 450px;
+    height: 250px;
+    background: ;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+
+.nomePagina{
+    width: 150px;
+    height: 70px;
+ 
+    text-align: center;
+    font-family: fantasy;
+    font-size: 20px;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+
+.escolhaPagina{
+    box-sizing: border-box;
+    padding: 50px;
+    width:250px;
+    height: inherit;
+    background: ;
+}
+
+#caixa_filtro{
+    width: 550px;
+    height: 50px;
+    background:;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+
+#sltMensagem{
+    width: 170px;
+    height: 25px;
+    margin-left: 80px;
+    float: left;
+    border-radius: 10px;
+    
+}
+
+#btnFiltro{
+    width: 80px;
+    height: 25px;
+    margin-left: 15px;
+    border-radius: 10px;
+    border: 0px;
+    background: black;
+    color: white;
+}
+
+#modal_caixa{
+    width:100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 999;
+    position: fixed;
+    display: none;
+}
+
+
+#modal{
+    width:800px;
+    height: 500px;
+    background-color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10vh;
+    
+}
+
+
+
+/*****Rodape****/
+
+#rodape{
+    width: 100%;
+    height: 100px;
+    background-color:rgb(175, 37, 37);
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+/*Pagina cadastro de nivel*/
+.divDados{
+    width: 84%;
+    height: 50px;
+    background: ;
+    display: flex;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+
+.divDados3{
+    width: 64%;
+    height: 50px;
+    background:;
+    display: flex;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.divDados2{
+    width: 77%;
+    height: 50px;
+    background: ;
+    display: flex;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+#areaCuriosidades{
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100px;
+    width: inherit;
+    background: ;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.box-curiosidades{
+    width: 270px;
+    height: inherit;
+    background:white;
+    text-align: center;
+    font-size: 16px;
+}
+
+.nomeNivel{
+    width: 110px;
+    height: inherit;
+    background:;
+    padding-top: 10px;
+    box-sizing: border-box;
+    font-size: 20px;
+
+}
+
+.nomeNivel2{
+    width: 210px;
+    height: inherit;
+    background:;
+    padding-top: 10px;
+    box-sizing: border-box;
+    font-size: 20px;
+    margin-right: 25px;
+    margin-left: 45px;
+}
+
+.admNome{
+    width: 290px;
+    height: inherit;
+    margin-right: 1px;
+    background:;
+    margin-left: 0px;
+   text-align: center;
+    padding-top: 8px;
+    box-sizing: border-box;
+}
+
+.admNome3{
+    width: 250px;
+    height: inherit;
+    margin-right: 1px;
+    background: ;
+    margin-left: 0px;
+   text-align: center;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+    padding-top: 8px;
+    box-sizing: border-box;
+}
+
+.tituloNiveis{
+    width: 50%;
+    height: 50px;
+    background: ;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+
+.admNome2{
+    min-width: 120px;
+    height: inherit;
+    margin-right: 1px;
+    background: ;
+    margin-left: 0px;
+   text-align: center;
+    padding-top: 8px;
+    box-sizing: border-box;
+    font-size: 25px;
+}
+
+.tituloNiveis2{
+    width: 80%;
+    height: 50px;
+    background: ;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 22px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/************* Formatação da modal ***********/
+#containerModal {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 999;
+    display: none;
+    
+    background-color: rgba(0, 0, 0, 0.7);
+}
+#modal {
+    width: 800px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10vh;
+    
+    background-color: #ffffff;
+}
+

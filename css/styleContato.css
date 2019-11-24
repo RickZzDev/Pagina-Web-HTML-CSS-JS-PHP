@@ -156,6 +156,10 @@ a{
     text-decoration: none;
 }
 
+.link{
+    color: black;
+}
+
 
 
 .menu_itens:hover{
@@ -263,7 +267,7 @@ a{
     width: 100%;
     height: 25px;
     background-color: rgb(71,00,17);
-    color: white;
+    color: black;
 }
 
 #txtUsuario{
@@ -597,8 +601,8 @@ a{
 }
 
 a:link{
-    text-decoration: none;
-    text-decoration-color: white;
+   
+   color: black;
     
 }
 .btnChegar{
@@ -637,7 +641,7 @@ img{
     margin-right: auto;
 }
 #roda{
-    margin-top: 0px;
+    margin-top:0px;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
@@ -706,6 +710,8 @@ img{
     
 }
 
+
+
 #caixa_baixa_app{
     float: left;
     height:80px;
@@ -733,7 +739,7 @@ img{
 
 #primeiraLinha{
     width: 100%;
-    height: 1050px;
+    height: 1650px;
     background-color: ;
     background-image: url(../imagens/pizza9.jpg);
     background-size: cover;
@@ -758,15 +764,23 @@ img{
     background-image: url(../imagens/pizza8.jpg);
 }
 
+
+#txtArea{
+    resize: none;
+    width: 300px;
+    height: 100px;
+    
+}
+
 .fixaCentro{
     width: 800px;
-    height: 1050px;
+    min-height: 1050px;
     background-color: rgba(255,255,255,1);
 }
 
 .fixaCentro2{
-    width: 500px;
-    height: 900px;
+    width: 600px;
+    min-height: 900px;
     background-color: ;
     box-sizing: border-box;
     padding-top: 10px;
@@ -789,6 +803,26 @@ img{
     background-color: ;
     margin-left: 25px;
     box-sizing: border-box;
+ 
+    margin-top: 100px;
+}
+
+.camposFrm2{
+    height: 150px;
+    width:550px;
+    background-color: ;
+    margin-left: 25px;
+    box-sizing: border-box;
+    
+    margin-top: 100px;
+}
+
+#campoNome{
+    height: 40px;
+    width:550px;
+    background-color: ;
+    margin-left: 25px;
+    box-sizing: border-box;
     
     margin-top: 50px;
 }
@@ -802,12 +836,38 @@ img{
     font-size: 25px;
 }
 
+.txtCampo2{
+    height: 98%;
+    width:200px;
+    background-color: ;
+    float: left;
+    margin-top: 0px;
+    font-size: 35px;
+    text-align: center;
+}
+
+#divCuriosidades{
+    width: inherit;
+    min-height: 100px;
+    background: ;
+ 
+    
+}
+
 #btnEnviar_div{
     width:50px;
     height:50px;
     background-color:;
     margin-left: 180px;
     margin-top: 15px;
+}
+
+#btnEnviar_div2{
+    width:180px;
+    height:50px;
+    background-color:;
+    margin-left: 180px;
+    margin-top: 85px;
 }
 
 #txtNome{
