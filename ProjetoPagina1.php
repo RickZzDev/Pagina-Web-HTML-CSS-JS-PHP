@@ -186,42 +186,26 @@ if(isset($_GET['btnLogin'])){
       
             <div id="caixa_conteudo">
                 <div id="menu_secundario">
+                <?php 
+                    $sql = "select * from tblcategoria";
+
+                    $rodaScript = mysqli_query($conexao,$sql);
+
+                    
+                    while($array = mysqli_fetch_array($rodaScript)){
+
+                    
+                ?>
                   <div class="submenu_itens">
                       <div class="fatiaIcone">
                           
                       </div>
                       <div class="submenu_titulo">
-                          <p>Submenu Titulo</p>
+                          <p><?=$array['nome']?></p>
                       </div>
                       
                   </div>
-                  <div class="submenu_itens">
-                      <div class="fatiaIcone">
-                          
-                      </div>
-                      <div class="submenu_titulo">
-                          <p>Submenu Titulo</p>
-                      </div>
-                      
-                  </div>
-                  <div class="submenu_itens">
-                      <div class="fatiaIcone">
-                          
-                      </div>
-                      <div class="submenu_titulo">
-                          <p>Submenu Titulo</p>
-                      </div>
-                      
-                  </div>
-                  <div class="submenu_itens">
-                      <div class="fatiaIcone">
-                          
-                      </div>
-                      <div class="submenu_titulo">
-                          <p>Submenu Titulo</p>
-                      </div>
-                      
-                  </div>                   
+                    <?php }?>               
                 </div>
                 <div id="caixa_produtos_div">
                     <div class="caixa_produtos">
